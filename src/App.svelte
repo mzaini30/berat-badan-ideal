@@ -5,7 +5,7 @@
   import "./tailwind.css";
 </script>
 
-<div class="latar min-h-screen w-full">
+<div class="">
 <Router {routes} />
 </div>
 
