@@ -2,9 +2,9 @@ export default function hitungBeratBadanIdeal(tinggi, jenisKelamin) {
   var beratBadanIdeal;
 
   if (jenisKelamin === "pria") {
-    beratBadanIdeal = (tinggi - 100) - ((tinggi - 100) * 10 / 100);
+    beratBadanIdeal = tinggi - 100 - ((tinggi - 100) * 10) / 100;
   } else if (jenisKelamin === "wanita") {
-    beratBadanIdeal = (tinggi - 100) - ((tinggi - 100) * 15 / 100);
+    beratBadanIdeal = tinggi - 100 - ((tinggi - 100) * 15) / 100;
   } else {
     return "Jenis kelamin tidak valid. Silakan masukkan 'pria' atau 'wanita'.";
   }
